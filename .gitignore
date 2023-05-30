@@ -1,0 +1,7 @@
+# files
+.env
+.envrc
+.DS_Store
+
+# folders
+.direnv/
