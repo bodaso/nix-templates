@@ -13,13 +13,13 @@ https://github.com/nix-community/home-manager
 To start an ad hoc shell with the desired Node version:
 
 ```sh
-nix develop "github:bodazhao/nix-templates?dir=node18"
+nix develop "github:bodaso/nix-templates?dir=node18"
 ```
 
 For some flakes, we need to add extra flags:
 
 ```sh
-export NIXPKGS_ALLOW_INSECURE=1; nix develop --impure "github:bodazhao/nix-templates?dir=node16"
+export NIXPKGS_ALLOW_INSECURE=1; nix develop --impure "github:bodaso/nix-templates?dir=node16"
 ```
 
 ## Integration with `direnv`
@@ -31,14 +31,14 @@ https://github.com/nix-community/nix-direnv#via-home-manager
 In local `.envrc` file, add the following:
 
 ```sh
-use flake "github:bodazhao/nix-templates?dir=node18"
+use flake "github:bodaso/nix-templates?dir=node18"
 ```
 
 For some flake, we need to export variable and add `--impure` flag in `.envrc` to run:
 
 ```sh
 export NIXPKGS_ALLOW_INSECURE=1;
-use flake --impure "github:bodazhao/nix-templates?dir=node16"
+use flake --impure "github:bodaso/nix-templates?dir=node16"
 ```
 
 ### How can `direnv` read from `.env` file?
