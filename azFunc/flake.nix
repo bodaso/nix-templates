@@ -9,6 +9,7 @@
     let
       allSystems = [
         "aarch64-darwin"
+        "aarch64-linux"
       ];
 
       forAllSystems = f: nixpkgs.lib.genAttrs allSystems (system: f {
